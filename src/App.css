@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 300px;
+  background-color: tomato;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.task-box {
+  width: 480px;
+  height: auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 35px;
+  margin-top: 0;
+}
+
+.task-box h1 {
+  margin: 0;
+}
+
+.task{
+  
+  width: 82%;
+  height: 35px;
+  border: 1px solid tomato;
+  border-radius: 3px;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.task:focus{
+  outline-color:lightsalmon;
+  background-color: rgb(250, 222, 210);
+}
+
+.add-btn{
+  padding: 10px;
+  vertical-align: top; /*버튼 라인이 상단과 정렬되게 함 */
+  background-color: tomato;
+  border:none;
+  border-radius: 3px;
+  font-weight: bold;
   color: white;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+.add-btn:hover{
+  background-color:lightsalmon;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clock{
+  margin-top: 0;
+  float:right;
+  font-weight: bold;
 }
+
+.day{
+  color: tomato;
+  margin-right: 10px;
+}
+
+.time{
+  color: lightsalmon;
+}
+
+.to-do-list{
+  padding: 0;
+}
+
+.to-do-list li{
+  list-style: none;
+  padding: 15px;
+  border: 1px solid tomato;
+  border-radius: 8px ;
+}
+.checkBox{
+  margin-right:20px;
+}
+
+.update-btn{
+  margin-right: 5px;
+  float: right;
+  color: white;
+  background-color:tomato;
+  border: none;
+  border-radius: 3px;
+  width: 40px;
+  height: 25px;
+  font-weight: bold;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.update-btn:hover{
+  background-color: lightsalmon;
+}
+
+.delete-btn{
+  float: right;
+  color: white;
+  background-color: salmon;
+  border: none;
+  border-radius: 3px;
+  width: 40px;
+  height: 25px;
+  font-weight: bold;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.delete-btn:hover{
+  background-color: lightsalmon;
+}
+
+.Done {
+  background-color: rgb(250, 222, 210);
+  text-decoration: line-through;
+  text-decoration-color:tomato;
+  
+}
+
