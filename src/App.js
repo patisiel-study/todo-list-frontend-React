@@ -1,12 +1,10 @@
 import './App.css';
 import TodoBoard from './components/TodoBoard';
 
-function App() {
+export default function App() {
   return (
-    <>
-      <TodoBoard/>
-    </>
+    <div>
+      <TodoBoard />
+    </div>
   );
 }
-
-export default App;

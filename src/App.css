@@ -13,8 +13,8 @@ body {
   font-style: normal;
 }
 
-.task-box {
-  width: 480px;
+#task-box {
+  width: 40rem;
   height: auto;
   padding: 30px;
   background-color: white;
@@ -22,12 +22,11 @@ body {
   margin-top: 0;
 }
 
-.task-box h1 {
+#task-box h1 {
   margin: 0;
 }
 
-.task{
-  
+#task {
   width: 82%;
   height: 35px;
   border: 1px solid tomato;
@@ -37,16 +36,17 @@ body {
   font-style: normal;
 }
 
-.task:focus{
-  outline-color:lightsalmon;
+#task:focus {
+  outline-color: lightsalmon;
   background-color: rgb(250, 222, 210);
 }
 
-.add-btn{
+#add-btn {
   padding: 10px;
-  vertical-align: top; /*버튼 라인이 상단과 정렬되게 함 */
+  vertical-align: top;
+  /*버튼 라인이 상단과 정렬되게 함 */
   background-color: tomato;
-  border:none;
+  border: none;
   border-radius: 3px;
   font-weight: bold;
   color: white;
@@ -55,44 +55,45 @@ body {
   font-style: normal;
 }
 
-.add-btn:hover{
-  background-color:lightsalmon;
+#add-btn:hover {
+  background-color: lightsalmon;
 }
 
-.clock{
+#clock {
   margin-top: 0;
-  float:right;
+  float: right;
   font-weight: bold;
 }
 
-.day{
+#day {
   color: tomato;
   margin-right: 10px;
 }
 
-.time{
+#time {
   color: lightsalmon;
 }
 
-.to-do-list{
+.to-do-list {
   padding: 0;
 }
 
-.to-do-list li{
+.to-do-list li {
   list-style: none;
   padding: 15px;
   border: 1px solid tomato;
-  border-radius: 8px ;
-}
-.checkBox{
-  margin-right:20px;
+  border-radius: 8px;
 }
 
-.update-btn{
+.checkBox {
+  margin-right: 20px;
+}
+
+.update-btn {
   margin-right: 5px;
   float: right;
   color: white;
-  background-color:tomato;
+  background-color: tomato;
   border: none;
   border-radius: 3px;
   width: 40px;
@@ -103,11 +104,11 @@ body {
   font-style: normal;
 }
 
-.update-btn:hover{
+.update-btn:hover {
   background-color: lightsalmon;
 }
 
-.delete-btn{
+.delete-btn {
   float: right;
   color: white;
   background-color: salmon;
@@ -121,16 +122,12 @@ body {
   font-style: normal;
 }
 
-
-
-.delete-btn:hover{
+.delete-btn:hover {
   background-color: lightsalmon;
 }
 
 .Done {
   background-color: rgb(250, 222, 210);
   text-decoration: line-through;
-  text-decoration-color:tomato;
-  
+  text-decoration-color: tomato;
 }
-
