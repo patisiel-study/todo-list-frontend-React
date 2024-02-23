@@ -1,15 +1,13 @@
 import React from "react";
-import AddTask from "./AddTask";
 import Clock from "./Clock";
+import AddTask from "./AddTask";
 
-
-function TodoBoard(){
-    return(
-        <div className="task-box">
+export default function TodoBoard() {
+    return (
+        <div id="task-box">
             <h1>TO DO LIST</h1>
-            <Clock/>
-            <AddTask/>  
+            <Clock />
+            <AddTask />
         </div>
-    )
-};
-export default TodoBoard;
+    );
+}

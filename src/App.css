@@ -6,131 +6,133 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding-top: 300px;
   background-color: tomato;
   font-family: "Jua", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.task-box {
-  width: 480px;
+#task-box {
+  width: 26rem;
   height: auto;
-  padding: 30px;
+  padding: 2rem;
   background-color: white;
-  border-radius: 35px;
-  margin-top: 0;
+  border-radius: 1rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
-.task-box h1 {
+#task-box h1 {
   margin: 0;
 }
 
-.task{
-  
+#task {
   width: 82%;
-  height: 35px;
-  border: 1px solid tomato;
-  border-radius: 3px;
+  height: 2rem;
+  border: 0.1rem solid tomato;
+  border-radius: 0.3rem;
   font-family: "Jua", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.task:focus{
-  outline-color:lightsalmon;
+#task:focus {
+  outline-color: lightsalmon;
   background-color: rgb(250, 222, 210);
 }
 
-.add-btn{
-  padding: 10px;
-  vertical-align: top; /*버튼 라인이 상단과 정렬되게 함 */
+#add-btn {
+  padding: 0.6rem;
+  vertical-align: top;
+  /*버튼 라인이 상단과 정렬되게 함 */
   background-color: tomato;
-  border:none;
-  border-radius: 3px;
-  font-weight: bold;
-  color: white;
-  font-family: "Jua", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.add-btn:hover{
-  background-color:lightsalmon;
-}
-
-.clock{
-  margin-top: 0;
-  float:right;
-  font-weight: bold;
-}
-
-.day{
-  color: tomato;
-  margin-right: 10px;
-}
-
-.time{
-  color: lightsalmon;
-}
-
-.to-do-list{
-  padding: 0;
-}
-
-.to-do-list li{
-  list-style: none;
-  padding: 15px;
-  border: 1px solid tomato;
-  border-radius: 8px ;
-}
-.checkBox{
-  margin-right:20px;
-}
-
-.update-btn{
-  margin-right: 5px;
-  float: right;
-  color: white;
-  background-color:tomato;
   border: none;
-  border-radius: 3px;
-  width: 40px;
-  height: 25px;
+  border-radius: 0.3rem;
   font-weight: bold;
+  color: white;
   font-family: "Jua", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.update-btn:hover{
+#add-btn:hover {
   background-color: lightsalmon;
 }
 
-.delete-btn{
+#clock {
+  margin-top: 0;
   float: right;
+  font-weight: bold;
+}
+
+#date {
+  color: tomato;
+}
+
+#time {
+  margin-left: 0.5rem;
+  color: lightsalmon;
+}
+
+.to-do-list {
+  padding: 0;
+}
+
+.to-do-list li {
+  list-style: none;
+  padding: 0.5rem;
+  border: 0.05rem solid tomato;
+  border-radius: 0.5rem;
+}
+
+.checkBox {
+  margin-right: 0.5rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.update-btn {
   color: white;
-  background-color: salmon;
+  background-color: tomato;
   border: none;
-  border-radius: 3px;
-  width: 40px;
-  height: 25px;
+  border-radius: 0.2rem;
+  width: 2.5rem;
+  height: 1.5rem;
   font-weight: bold;
   font-family: "Jua", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+.update-btn:hover {
+  background-color: lightsalmon;
+}
 
+.delete-btn {
+  color: white;
+  background-color: salmon;
+  border: none;
+  border-radius: 0.2rem;
+  width: 2.5rem;
+  height: 1.5rem;
+  font-weight: bold;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-.delete-btn:hover{
+.delete-btn:hover {
   background-color: lightsalmon;
 }
 
 .Done {
   background-color: rgb(250, 222, 210);
-  text-decoration: line-through;
-  text-decoration-color:tomato;
-  
 }
 
+.Done .todo-content {
+  text-decoration: line-through;
+  text-decoration-color: tomato;
+}
